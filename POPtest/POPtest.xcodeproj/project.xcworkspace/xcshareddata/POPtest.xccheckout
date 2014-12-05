@@ -10,6 +10,8 @@
 	<string>POPtest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>834011C228D4AD5304768FD18F08A473BE144256</key>
+		<string>https://github.com/atbj505/SILK-S-iOS.git</string>
 		<key>F26E529979119E9E2E03A238642FFA41411210A1</key>
 		<string>github.com:atbj505/POPtest.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>POPtest/POPtest.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>834011C228D4AD5304768FD18F08A473BE144256</key>
+		<string>../../../..</string>
 		<key>F26E529979119E9E2E03A238642FFA41411210A1</key>
 		<string>../../..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>F26E529979119E9E2E03A238642FFA41411210A1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>834011C228D4AD5304768FD18F08A473BE144256</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

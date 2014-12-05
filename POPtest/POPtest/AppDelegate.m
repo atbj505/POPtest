@@ -25,7 +25,7 @@
     
     self.window.rootViewController = navi;
     
-    self.window.backgroundColor = [UIColor clearColor];
+    self.window.backgroundColor = [UIColor whiteColor];
     
     [self.window makeKeyAndVisible];
     

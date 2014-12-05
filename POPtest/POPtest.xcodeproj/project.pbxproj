@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		573668451A31884800324F2A /* LayerSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573668441A31884800324F2A /* LayerSizeViewController.m */; };
+		57A215A91A318D1300663D52 /* LayerPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A215A81A318D1300663D52 /* LayerPositionViewController.m */; };
+		57A215AC1A31943500663D52 /* ViewFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A215AB1A31943500663D52 /* ViewFrameViewController.m */; };
+		57A215AF1A31969200663D52 /* ViewAlphaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A215AE1A31969200663D52 /* ViewAlphaViewController.m */; };
+		57A215B21A3199D100663D52 /* POPboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A215B11A3199D100663D52 /* POPboxViewController.m */; };
 		57EB4FF21A2F531F00E76D50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EB4FF11A2F531F00E76D50 /* main.m */; };
 		57EB4FF51A2F531F00E76D50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EB4FF41A2F531F00E76D50 /* AppDelegate.m */; };
 		57EB4FFD1A2F531F00E76D50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57EB4FFC1A2F531F00E76D50 /* Images.xcassets */; };
@@ -46,6 +51,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		573668431A31884800324F2A /* LayerSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerSizeViewController.h; sourceTree = "<group>"; };
+		573668441A31884800324F2A /* LayerSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerSizeViewController.m; sourceTree = "<group>"; };
+		57A215A71A318D1300663D52 /* LayerPositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerPositionViewController.h; sourceTree = "<group>"; };
+		57A215A81A318D1300663D52 /* LayerPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerPositionViewController.m; sourceTree = "<group>"; };
+		57A215AA1A31943500663D52 /* ViewFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFrameViewController.h; sourceTree = "<group>"; };
+		57A215AB1A31943500663D52 /* ViewFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFrameViewController.m; sourceTree = "<group>"; };
+		57A215AD1A31969200663D52 /* ViewAlphaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAlphaViewController.h; sourceTree = "<group>"; };
+		57A215AE1A31969200663D52 /* ViewAlphaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAlphaViewController.m; sourceTree = "<group>"; };
+		57A215B01A3199D100663D52 /* POPboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPboxViewController.h; sourceTree = "<group>"; };
+		57A215B11A3199D100663D52 /* POPboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPboxViewController.m; sourceTree = "<group>"; };
 		57EB4FEC1A2F531F00E76D50 /* POPtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POPtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EB4FF01A2F531F00E76D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57EB4FF11A2F531F00E76D50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -159,6 +174,16 @@
 				57EB4FF41A2F531F00E76D50 /* AppDelegate.m */,
 				57EB50161A2F53DD00E76D50 /* RYTableViewController.h */,
 				57EB50171A2F53DD00E76D50 /* RYTableViewController.m */,
+				573668431A31884800324F2A /* LayerSizeViewController.h */,
+				573668441A31884800324F2A /* LayerSizeViewController.m */,
+				57A215A71A318D1300663D52 /* LayerPositionViewController.h */,
+				57A215A81A318D1300663D52 /* LayerPositionViewController.m */,
+				57A215AA1A31943500663D52 /* ViewFrameViewController.h */,
+				57A215AB1A31943500663D52 /* ViewFrameViewController.m */,
+				57A215AD1A31969200663D52 /* ViewAlphaViewController.h */,
+				57A215AE1A31969200663D52 /* ViewAlphaViewController.m */,
+				57A215B01A3199D100663D52 /* POPboxViewController.h */,
+				57A215B11A3199D100663D52 /* POPboxViewController.m */,
 				57EB50661A2F59CB00E76D50 /* Default-568h@2x.png */,
 				57EB4FFC1A2F531F00E76D50 /* Images.xcassets */,
 				57EB4FEF1A2F531F00E76D50 /* Supporting Files */,
@@ -363,7 +388,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A215A91A318D1300663D52 /* LayerPositionViewController.m in Sources */,
+				57A215AC1A31943500663D52 /* ViewFrameViewController.m in Sources */,
 				57EB50181A2F53DD00E76D50 /* RYTableViewController.m in Sources */,
+				573668451A31884800324F2A /* LayerSizeViewController.m in Sources */,
 				57EB50581A2F553B00E76D50 /* POPAnimationRuntime.mm in Sources */,
 				57EB50641A2F553B00E76D50 /* POPVector.mm in Sources */,
 				57EB50551A2F553B00E76D50 /* POPAnimation.mm in Sources */,
@@ -374,6 +402,7 @@
 				57EB50571A2F553B00E76D50 /* POPAnimationExtras.mm in Sources */,
 				57EB50561A2F553B00E76D50 /* POPAnimationEvent.mm in Sources */,
 				57EB50541A2F553B00E76D50 /* POPAnimatableProperty.mm in Sources */,
+				57A215B21A3199D100663D52 /* POPboxViewController.m in Sources */,
 				57EB505A1A2F553B00E76D50 /* POPAnimator.mm in Sources */,
 				57EB505E1A2F553B00E76D50 /* POPDecayAnimation.mm in Sources */,
 				57EB50631A2F553B00E76D50 /* POPSpringAnimation.mm in Sources */,
@@ -382,6 +411,7 @@
 				57EB50601A2F553B00E76D50 /* POPLayerExtras.mm in Sources */,
 				57EB4FF21A2F531F00E76D50 /* main.m in Sources */,
 				57EB505C1A2F553B00E76D50 /* POPCGUtils.mm in Sources */,
+				57A215AF1A31969200663D52 /* ViewAlphaViewController.m in Sources */,
 				57EB50611A2F553B00E76D50 /* POPMath.mm in Sources */,
 				57EB505D1A2F553B00E76D50 /* POPCustomAnimation.mm in Sources */,
 			);
@@ -568,6 +598,7 @@
 				57EB50111A2F531F00E76D50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57EB50121A2F531F00E76D50 /* Build configuration list for PBXNativeTarget "POPtestTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +607,7 @@
 				57EB50141A2F531F00E76D50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

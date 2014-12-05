@@ -7,6 +7,11 @@
 //
 
 #import "RYTableViewController.h"
+#import "LayerSizeViewController.h"
+#import "LayerPositionViewController.h"
+#import "ViewFrameViewController.h"
+#import "ViewAlphaViewController.h"
+#import "POPboxViewController.h"
 
 @interface RYTableViewController (){
     NSArray *_titles;
@@ -22,7 +27,7 @@
     
     NSDictionary *springDic = @{@"type":@"POPSpringAnimation",@"animations":@[@"kPOPLayerSize",@"kPOPLayerPosition",@"kPOPViewFrame"]};
     NSDictionary *basicDic = @{@"type":@"POPBasicAnimation",@"animations":@[@"kPOPViewAlpha"]};
-    NSDictionary *combinDic = @{@"type":@"CombineAnimation",@"animations":@[@" POPbox"]};
+    NSDictionary *combinDic = @{@"type":@"CombineAnimation",@"animations":@[@"POPbox"]};
     
     _titles = @[springDic,basicDic,combinDic];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
@@ -62,50 +67,37 @@ static NSString *identifier = @"cellIdentifier";
     
     return cell;
 }
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.section) {
+        case 0:
+        {
+            if (indexPath.row == 0) {
+                LayerSizeViewController *layerSize = [[LayerSizeViewController alloc]initWithNibName:nil bundle:nil];
+                [self.navigationController pushViewController:layerSize animated:YES];
+            }else if (indexPath.row == 1){
+                LayerPositionViewController *layerPosition = [[LayerPositionViewController alloc]initWithNibName:nil bundle:nil];
+                [self.navigationController pushViewController:layerPosition animated:YES];
+            }else if (indexPath.row){
+                ViewFrameViewController *viewFrame = [[ViewFrameViewController alloc]initWithNibName:nil bundle:nil];
+                [self.navigationController pushViewController:viewFrame animated:YES];
+            }
+        }
+            break;
+        case 1:
+        {
+            ViewAlphaViewController *viewAlpha = [[ViewAlphaViewController alloc]initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:viewAlpha animated:YES];
+        }
+            break;
+            
+        case 2:
+        {
+            POPboxViewController *popBox = [[POPboxViewController alloc]initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:popBox animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end
